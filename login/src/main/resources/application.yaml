@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: login
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_estudo?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: sua_senha_segura
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+    show-sql: false
+    open-in-view: false
+logging:
+  level:
+#    root: WARN
+    br.com.codedemonbr: DEBUG
